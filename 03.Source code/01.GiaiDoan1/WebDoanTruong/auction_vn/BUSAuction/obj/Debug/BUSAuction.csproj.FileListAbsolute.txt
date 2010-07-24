@@ -169,3 +169,12 @@ C:\NewWebDoanTruong\NewWebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\BUSA
 C:\NewWebDoanTruong\NewWebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\BUSAuction\obj\Debug\ResolveAssemblyReference.cache
 C:\NewWebDoanTruong\NewWebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\BUSAuction\obj\Debug\BUSAuction.dll
 C:\NewWebDoanTruong\NewWebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\BUSAuction\obj\Debug\BUSAuction.pdb
+E:\Web_ASP\WebDoanTruong\03.Source code\01.GiaiDoan1\WebDoanTruong\auction_vn\BUSAuction\bin\Debug\BUSAuction.dll
+E:\Web_ASP\WebDoanTruong\03.Source code\01.GiaiDoan1\WebDoanTruong\auction_vn\BUSAuction\bin\Debug\BUSAuction.pdb
+E:\Web_ASP\WebDoanTruong\03.Source code\01.GiaiDoan1\WebDoanTruong\auction_vn\BUSAuction\bin\Debug\DAOAuction.dll
+E:\Web_ASP\WebDoanTruong\03.Source code\01.GiaiDoan1\WebDoanTruong\auction_vn\BUSAuction\bin\Debug\DTOAuction.dll
+E:\Web_ASP\WebDoanTruong\03.Source code\01.GiaiDoan1\WebDoanTruong\auction_vn\BUSAuction\bin\Debug\DAOAuction.pdb
+E:\Web_ASP\WebDoanTruong\03.Source code\01.GiaiDoan1\WebDoanTruong\auction_vn\BUSAuction\bin\Debug\DTOAuction.pdb
+E:\Web_ASP\WebDoanTruong\03.Source code\01.GiaiDoan1\WebDoanTruong\auction_vn\BUSAuction\obj\Debug\ResolveAssemblyReference.cache
+E:\Web_ASP\WebDoanTruong\03.Source code\01.GiaiDoan1\WebDoanTruong\auction_vn\BUSAuction\obj\Debug\BUSAuction.dll
+E:\Web_ASP\WebDoanTruong\03.Source code\01.GiaiDoan1\WebDoanTruong\auction_vn\BUSAuction\obj\Debug\BUSAuction.pdb
