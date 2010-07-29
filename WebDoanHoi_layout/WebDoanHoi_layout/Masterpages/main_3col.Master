@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main_3col.master.cs"
+    Inherits="WebDoanHoi_layout.main_3col" %>
+
+<%@ Register Src="~/wuc/header.ascx" TagName="header" TagPrefix="uc1" %>
+<%@ Register Src="../wuc/sidebar/sb_quangcao.ascx" TagName="sb_quangcao" TagPrefix="uc2" %>
+<%@ Register Src="../wuc/sidebar/sb_tinmoinhat.ascx" TagName="sb_tinmoinhat" TagPrefix="uc3" %>
+<%@ Register Src="../wuc/footer.ascx" TagName="footer" TagPrefix="uc4" %>
+<%@ Register Src="../wuc/sidebar/sb_baihat.ascx" TagName="sb_baihat" TagPrefix="uc5" %>
+<%@ Register Src="../wuc/sidebar/sb_hd_noibat.ascx" TagName="sb_hd_noibat" TagPrefix="uc6" %>
+<%@ Register Src="../wuc/sidebar/sb_danhgia.ascx" TagName="sb_danhgia" TagPrefix="uc7" %>
+<%@ Register Src="../wuc/sidebar/sb_khaosat.ascx" TagName="sb_khaosat" TagPrefix="uc8" %>
+<%@ Register Src="../wuc/sidebar/sb_hinhanh.ascx" TagName="sb_hinhanh" TagPrefix="uc9" %>
+<%@ Register Src="../wuc/sidebar/sb_dangnhap.ascx" TagName="sb_dangnhap" TagPrefix="uc10" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../css/style-3-col.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form runat="server">
+    <div id="wrapper">
+        <div id="header">
+            <uc1:header ID="header1" runat="server" />
+        </div>
+        <!-- header end -->
+        <div id="content">
+            <div id="posts">
+                <asp:ContentPlaceHolder ID="cphPost" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- posts end -->
+            <div id="sidebar">
+                <div class="sidebar">
+                    <uc3:sb_tinmoinhat ID="sb_tinmoinhat1" runat="server" />
+                    <uc5:sb_baihat ID="sb_baihat1" runat="server" />
+                    <uc8:sb_khaosat ID="sb_khaosat1" runat="server" />
+                </div>
+                <!-- sidebar1 end -->
+                <div class="sidebar">
+                    <uc2:sb_quangcao ID="sb_quangcao1" runat="server" />
+                    <uc10:sb_dangnhap ID="sb_dangnhap1" runat="server" />
+                    <uc6:sb_hd_noibat ID="sb_hd_noibat1" runat="server" />
+                    <uc7:sb_danhgia ID="sb_danhgia1" runat="server" />
+                </div>
+                <!-- sidebar2 end -->
+                <div id="slideshow">
+                    <uc9:sb_hinhanh ID="sb_hinhanh1" runat="server" />
+                </div>
+            </div>
+            <!-- sidebar2 end -->
+        </div>
+        <!-- content end -->
+        <div id="footer">
+            <uc4:footer ID="footer1" runat="server" />
+        </div>
+        <!-- footer end -->
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+E:\_Tong_hop_project\Web_Doan-Hoi_Project\WebDoanHoi_layout\WebDoanHoi_layout\bin\WebDoanHoi_layout.dll
+E:\_Tong_hop_project\Web_Doan-Hoi_Project\WebDoanHoi_layout\WebDoanHoi_layout\bin\WebDoanHoi_layout.pdb
+E:\_Tong_hop_project\Web_Doan-Hoi_Project\WebDoanHoi_layout\WebDoanHoi_layout\obj\Debug\ResolveAssemblyReference.cache
+E:\_Tong_hop_project\Web_Doan-Hoi_Project\WebDoanHoi_layout\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.dll
+E:\_Tong_hop_project\Web_Doan-Hoi_Project\WebDoanHoi_layout\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.pdb
+E:\_Tong_hop_project\Web_Doan-Hoi_Project\website-doan-truong\trunk\03.Source code\Layout\WebDoanHoi_layout\WebDoanHoi_layout\bin\WebDoanHoi_layout.dll
+E:\_Tong_hop_project\Web_Doan-Hoi_Project\website-doan-truong\trunk\03.Source code\Layout\WebDoanHoi_layout\WebDoanHoi_layout\bin\WebDoanHoi_layout.pdb
+E:\_Tong_hop_project\Web_Doan-Hoi_Project\website-doan-truong\trunk\03.Source code\Layout\WebDoanHoi_layout\WebDoanHoi_layout\obj\Debug\ResolveAssemblyReference.cache
+E:\_Tong_hop_project\Web_Doan-Hoi_Project\website-doan-truong\trunk\03.Source code\Layout\WebDoanHoi_layout\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.dll
+E:\_Tong_hop_project\Web_Doan-Hoi_Project\website-doan-truong\trunk\03.Source code\Layout\WebDoanHoi_layout\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.pdb
