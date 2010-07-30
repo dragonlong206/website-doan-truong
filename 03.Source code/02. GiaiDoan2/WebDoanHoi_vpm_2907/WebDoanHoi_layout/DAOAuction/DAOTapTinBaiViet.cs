@@ -8,22 +8,23 @@ using System.Configuration;
 
 namespace DAOAuction
 {
-    public class DAOTapTin
+    public class DAOTapTinBaiViet
     {
         #region Ham chung: Load Them Xoa Capnhat Timkiem 15/07/2010
-        public List<TAPTIN> SelectTAPTINsAll()
+        public List<TAPTINBAIVIET> SelectTAPTINBAIVIETsAll()
         {
-            List<TAPTIN> list = new List<TAPTIN>();
+            List<TAPTINBAIVIET> list = new List<TAPTINBAIVIET>();
             using (LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString))
             {
-                ISingleResult<TAPTIN_getallResult> lp = db.TAPTIN_getall();
-                foreach (TAPTIN_getallResult TAPTIN in lp)
+                
+                ISingleResult<TAPTINBAIVIET_getallResult> lp = db.TAPTINBAIVIET_getall();
+                foreach (TAPTINBAIVIET_getallResult TAPTINBAIVIET in lp)
                 {
-                    TAPTIN var1 = new TAPTIN();
-                    var1.mataptin = TAPTIN.mataptin ;
-                    var1.tentaptin  = TAPTIN.tentaptin ;
-                    var1.duongdan = TAPTIN.duongdan;
-                    var1.mabaiviet  = TAPTIN.mabaiviet;
+                    TAPTINBAIVIET var1 = new TAPTINBAIVIET();
+                    var1.MaTapTin  = TAPTINBAIVIET.MaTapTin ;
+                    var1.TenTapTin  = TAPTINBAIVIET.TenTapTin ;
+                    var1.DuongDan = TAPTINBAIVIET.DuongDan ;
+                    var1.MaBaiViet  = TAPTINBAIVIET.MaBaiViet ;
 
                     list.Add(var1);
                 }
@@ -42,22 +43,22 @@ namespace DAOAuction
 
             return list;
         }
-        public int Them(TAPTIN lpDTO)
+        public int Them(TAPTINBAIVIET lpDTO)
         {
             try
             {
                 LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString);
-                return db.TAPTIN_add(
-                    lpDTO.mataptin,
-                    lpDTO.tentaptin,
-                    lpDTO.duongdan,
-                    lpDTO.mabaiviet
+                 db.TAPTINBAIVIET_add (
+                    lpDTO.TenTapTin ,
+                    lpDTO.DuongDan ,
+                    lpDTO.MaBaiViet 
                     );
-
+                 return 1;
             }
             catch (Exception ex)
             {
                 throw (ex);
+                return 0;
             }
         }
 
@@ -66,7 +67,7 @@ namespace DAOAuction
             try
             {
                 LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString);
-                return db.TAPTIN_delete(mataptin);
+                return db.TAPTINBAIVIET_delete(mataptin);
             }
             catch (Exception ex)
             {
@@ -74,16 +75,16 @@ namespace DAOAuction
             }
         }
 
-        public int CapNhat(TAPTIN lpDTO)
+        public int CapNhat(TAPTINBAIVIET lpDTO)
         {
             try
             {
                 LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString);
-                return db.TAPTIN_update(
-                    lpDTO.mataptin,
-                    lpDTO.tentaptin,
-                    lpDTO.duongdan,
-                    lpDTO.mabaiviet
+                return db.TAPTINBAIVIET_update(
+                    lpDTO.MaTapTin ,
+                    lpDTO.TenTapTin ,
+                    lpDTO.DuongDan ,
+                    lpDTO.MaBaiViet 
                     );
             }
             catch (Exception ex)
@@ -91,14 +92,14 @@ namespace DAOAuction
                 throw (ex);
             }
         }
-        public TAPTIN TimKiemMaTapTin(int mataptin)
+        public TAPTINBAIVIET TimKiemMaTapTin(int mataptin)
         {
             try
             {
                 LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString);
 
-                var query = from ng in db.TAPTINs
-                            where (ng.mataptin == mataptin)
+                var query = from ng in db.TAPTINBAIVIETs
+                            where (ng.MaTapTin == mataptin)
                             select ng;
                 if (query.Count() > 0)
                     return query.First();
@@ -110,14 +111,14 @@ namespace DAOAuction
                 throw (ex);
             }
         }
-        public TAPTIN TimKiemMaBaiViet(int mabaiviet)
+        public TAPTINBAIVIET TimKiemMaBaiViet(int mabaiviet)
         {
             try
             {
                 LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString);
 
-                var query = from ng in db.TAPTINs
-                            where (ng.mabaiviet == mabaiviet)
+                var query = from ng in db.TAPTINBAIVIETs
+                            where (ng.MaBaiViet == mabaiviet)
                             select ng;
                 if (query.Count() > 0)
                     return query.First();
@@ -129,14 +130,14 @@ namespace DAOAuction
                 throw (ex);
             }
         }
-        public TAPTIN TimKiemTenTapTin(string tenTapTin)
+        public TAPTINBAIVIET TimKiemTenTapTin(string tenTapTin)
         {
             try
             {
                 LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString);
 
-                var query = from ng in db.TAPTINs
-                            where (ng.tentaptin == tenTapTin)
+                var query = from ng in db.TAPTINBAIVIETs
+                            where (ng.TenTapTin == tenTapTin)
                             select ng;
                 if (query.Count() > 0)
                     return query.First();
