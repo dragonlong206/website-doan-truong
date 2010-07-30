@@ -7,54 +7,54 @@ using DTOAuction;
 
 namespace BUSAuction
 {
-    public class BUSTapTin
+    public class BUSTapTinBaiViet
     {
         #region Ham chung: Load Them Xoa Capnhat Timkiem 15/07/2010
-        public List<TAPTIN> SelectTAPTINsAll()
+        public List<TAPTINBAIVIET> SelectTAPTINBAIVIETsAll()
         {
-            DAOTapTin TAPTIN = new DAOTapTin();
-            return TAPTIN.SelectTAPTINsAll();
+            DAOTapTinBaiViet TAPTINBAIVIET = new DAOTapTinBaiViet();
+            return TAPTINBAIVIET.SelectTAPTINBAIVIETsAll();
         }
 
-        public int Them(TAPTIN lpDTO)
+        public int Them(TAPTINBAIVIET lpDTO)
         {
-            DAOTapTin TAPTIN = new DAOTapTin();
-            return TAPTIN.Them(lpDTO);
+            DAOTapTinBaiViet TAPTINBAIVIET = new DAOTapTinBaiViet();
+            return TAPTINBAIVIET.Them(lpDTO);
         }
 
         public int Xoa(int machungtu)
         {
-            DAOTapTin TAPTIN = new DAOTapTin();
-            return TAPTIN.Xoa(machungtu);
+            DAOTapTinBaiViet TAPTINBAIVIET = new DAOTapTinBaiViet();
+            return TAPTINBAIVIET.Xoa(machungtu);
         }
 
-        public int CapNhat(TAPTIN lpDTO)
+        public int CapNhat(TAPTINBAIVIET lpDTO)
         {
-            DAOTapTin TAPTIN = new DAOTapTin();
-            return TAPTIN.CapNhat(lpDTO);
+            DAOTapTinBaiViet TAPTINBAIVIET = new DAOTapTinBaiViet();
+            return TAPTINBAIVIET.CapNhat(lpDTO);
         }
 
-        public TAPTIN TimKiemMaTapTin(int maTapTin)
+        public TAPTINBAIVIET TimKiemMaTapTin(int maTapTin)
         {
-            DAOTapTin TAPTIN = new DAOTapTin();
-            return TAPTIN.TimKiemMaTapTin(maTapTin);
+            DAOTapTinBaiViet TAPTINBAIVIET = new DAOTapTinBaiViet();
+            return TAPTINBAIVIET.TimKiemMaTapTin(maTapTin);
         }
-        public TAPTIN TimKiemMaBaiViet(int maBaiViet)
+        public TAPTINBAIVIET TimKiemMaBaiViet(int maBaiViet)
         {
-            DAOTapTin TAPTIN = new DAOTapTin();
-            return TAPTIN.TimKiemMaBaiViet(maBaiViet);
+            DAOTapTinBaiViet TAPTINBAIVIET = new DAOTapTinBaiViet();
+            return TAPTINBAIVIET.TimKiemMaBaiViet(maBaiViet);
         }
-        public TAPTIN TimKiemTenTapTin(string tenTapTin)
+        public TAPTINBAIVIET TimKiemTenTapTin(string tenTapTin)
         {
-            DAOTapTin TAPTIN = new DAOTapTin();
-            return TAPTIN.TimKiemTenTapTin(tenTapTin);
+            DAOTapTinBaiViet TAPTINBAIVIET = new DAOTapTinBaiViet();
+            return TAPTINBAIVIET.TimKiemTenTapTin(tenTapTin);
         }
         public int TimSoLuongTapTin()
         {
             int sl;
 
-            DAOTapTin TAPTIN = new DAOTapTin();
-            List<TAPTIN> listTapTin = TAPTIN.SelectTAPTINsAll();
+            DAOTapTinBaiViet TAPTINBAIVIET = new DAOTapTinBaiViet();
+            List<TAPTINBAIVIET> listTapTin = TAPTINBAIVIET.SelectTAPTINBAIVIETsAll();
             sl = listTapTin.Count;
 
             return sl;
