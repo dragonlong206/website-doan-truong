@@ -1,0 +1,144 @@
+C:\Inetpub\wwwroot\Auction_ver_2.0\DTOAuction\bin\Debug\DTOAuction.dll.config
+C:\Inetpub\wwwroot\Auction_ver_2.0\DTOAuction\bin\Debug\DTOAuction.dll
+C:\Inetpub\wwwroot\Auction_ver_2.0\DTOAuction\bin\Debug\DTOAuction.pdb
+C:\Inetpub\wwwroot\Auction_ver_2.0\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\Auction_ver_2.0\DTOAuction\obj\Debug\DTOAuction.dll
+C:\Inetpub\wwwroot\Auction_ver_2.0\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\Auction_ver_2.0\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\Auction_ver_2.0\DTOAuction\bin\Debug\DTOAuction.dll
+D:\Auction_ver_2.0\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\Auction_ver_2.0\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\Auction_ver_2.0\DTOAuction\obj\Debug\DTOAuction.dll
+D:\Auction_ver_2.0\DTOAuction\obj\Debug\DTOAuction.pdb
+C:\Inetpub\wwwroot\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+C:\Inetpub\wwwroot\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+C:\Inetpub\wwwroot\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+C:\Inetpub\wwwroot\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+C:\Inetpub\wwwroot\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+C:\Inetpub\wwwroot\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+C:\Learn\Cources 4\Thuong Mai Dien Tu\DoAn\Auction_27_6\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+C:\Learn\Cources 4\Thuong Mai Dien Tu\DoAn\Auction_27_6\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+C:\Learn\Cources 4\Thuong Mai Dien Tu\DoAn\Auction_27_6\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+C:\Learn\Cources 4\Thuong Mai Dien Tu\DoAn\Auction_27_6\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+C:\Learn\Cources 4\Thuong Mai Dien Tu\DoAn\Auction_27_6\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+C:\Learn\Cources 4\Thuong Mai Dien Tu\DoAn\Auction_27_6\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\Auction_27_6\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\Auction_27_6\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\Auction_27_6\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+D:\Auction_27_6\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\Auction_27_6\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+D:\Auction_27_6\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+C:\Documents and Settings\THIENTRANG\Desktop\NuocMam\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+C:\Documents and Settings\THIENTRANG\Desktop\NuocMam\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+C:\Documents and Settings\THIENTRANG\Desktop\NuocMam\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+C:\Documents and Settings\THIENTRANG\Desktop\NuocMam\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\THIENTRANG\Desktop\NuocMam\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+C:\Documents and Settings\THIENTRANG\Desktop\NuocMam\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+C:\Documents and Settings\THIENTRANG\Desktop\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+C:\Documents and Settings\THIENTRANG\Desktop\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+C:\Documents and Settings\THIENTRANG\Desktop\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+C:\Documents and Settings\THIENTRANG\Desktop\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\THIENTRANG\Desktop\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+C:\Documents and Settings\THIENTRANG\Desktop\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+C:\Documents and Settings\Mantero\Desktop\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+C:\Documents and Settings\Mantero\Desktop\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+C:\Documents and Settings\Mantero\Desktop\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+C:\Documents and Settings\Mantero\Desktop\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mantero\Desktop\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+C:\Documents and Settings\Mantero\Desktop\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+C:\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+C:\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+C:\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+C:\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+C:\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+C:\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\Hai\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\Hai\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+D:\Hai\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\Hai\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\Hai\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+D:\Hai\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+C:\NewWebDoanTruong\NewWebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+C:\NewWebDoanTruong\NewWebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+C:\NewWebDoanTruong\NewWebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+C:\NewWebDoanTruong\NewWebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+C:\NewWebDoanTruong\NewWebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+C:\NewWebDoanTruong\NewWebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+C:\Documents and Settings\Mantero\My Documents\Downloads\Compressed\WebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+C:\Documents and Settings\Mantero\My Documents\Downloads\Compressed\WebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+C:\Documents and Settings\Mantero\My Documents\Downloads\Compressed\WebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+C:\Documents and Settings\Mantero\My Documents\Downloads\Compressed\WebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Mantero\My Documents\Downloads\Compressed\WebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+C:\Documents and Settings\Mantero\My Documents\Downloads\Compressed\WebDoanTruong\WebDoanTruong\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+I:\WebDoanTruong 29-7\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll.config
+I:\WebDoanTruong 29-7\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.dll
+I:\WebDoanTruong 29-7\WebDoanTruong\auction_vn\DTOAuction\bin\Debug\DTOAuction.pdb
+I:\WebDoanTruong 29-7\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+I:\WebDoanTruong 29-7\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.dll
+I:\WebDoanTruong 29-7\WebDoanTruong\auction_vn\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanHoi_vpm_2907\WebDoanHoi_layout\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\MHX2010\WebDoanHoi_vpm_2907\WebDoanHoi_layout\DTOAuction\bin\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanHoi_vpm_2907\WebDoanHoi_layout\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanHoi_vpm_2907\WebDoanHoi_layout\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\MHX2010\WebDoanHoi_vpm_2907\WebDoanHoi_layout\DTOAuction\obj\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanHoi_vpm_2907\WebDoanHoi_layout\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanHoi_vpm_3107\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\MHX2010\WebDoanHoi_vpm_3107\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanHoi_vpm_3107\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanHoi_vpm_3107\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\MHX2010\WebDoanHoi_vpm_3107\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanHoi_vpm_3107\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanHoi\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\MHX2010\WebDoanHoi\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanHoi\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanHoi\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\MHX2010\WebDoanHoi\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanHoi\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\EBOOK\Projects Trung Nghia\Web\WebDoanHoi_vpm_2907\03.Source code\02.GiaiDoan2\New folder\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\EBOOK\Projects Trung Nghia\Web\WebDoanHoi_vpm_2907\03.Source code\02.GiaiDoan2\New folder\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll
+D:\EBOOK\Projects Trung Nghia\Web\WebDoanHoi_vpm_2907\03.Source code\02.GiaiDoan2\New folder\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\EBOOK\Projects Trung Nghia\Web\WebDoanHoi_vpm_2907\03.Source code\02.GiaiDoan2\New folder\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\EBOOK\Projects Trung Nghia\Web\WebDoanHoi_vpm_2907\03.Source code\02.GiaiDoan2\New folder\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.dll
+D:\EBOOK\Projects Trung Nghia\Web\WebDoanHoi_vpm_2907\03.Source code\02.GiaiDoan2\New folder\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\MHX2010\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\MHX2010\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll
+D:\MHX2010\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\MHX2010\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\MHX2010\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.dll
+D:\MHX2010\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.pdb
+C:\Documents and Settings\Le Van Long\Desktop\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll.config
+C:\Documents and Settings\Le Van Long\Desktop\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll
+C:\Documents and Settings\Le Van Long\Desktop\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.pdb
+C:\Documents and Settings\Le Van Long\Desktop\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Le Van Long\Desktop\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.dll
+C:\Documents and Settings\Le Van Long\Desktop\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.dll
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.dll
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_3107\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\bin\Debug\DTOAuction.dll
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\obj\Debug\DTOAuction.dll
+D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanTruong_0408\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\MHX2010\WebDoanTruong_0408\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\bin\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanTruong_0408\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanTruong_0408\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\MHX2010\WebDoanTruong_0408\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\obj\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanTruong_0408\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanTruong_0508\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\MHX2010\WebDoanTruong_0508\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\bin\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanTruong_0508\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanTruong_0508\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\MHX2010\WebDoanTruong_0508\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\obj\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanTruong_0508\Rap_HMinh\WebDoanHoi_vpm_0408\DTOAuction\obj\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanHoi_vpm_0508\DTOAuction\bin\Debug\DTOAuction.dll.config
+D:\MHX2010\WebDoanHoi_vpm_0508\DTOAuction\bin\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanHoi_vpm_0508\DTOAuction\bin\Debug\DTOAuction.pdb
+D:\MHX2010\WebDoanHoi_vpm_0508\DTOAuction\obj\Debug\ResolveAssemblyReference.cache
+D:\MHX2010\WebDoanHoi_vpm_0508\DTOAuction\obj\Debug\DTOAuction.dll
+D:\MHX2010\WebDoanHoi_vpm_0508\DTOAuction\obj\Debug\DTOAuction.pdb
