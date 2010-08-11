@@ -1,0 +1,13 @@
+ALTER PROCEDURE dbo.TAPTINBAIVIET_getLichLamViec
+	/*
+	(
+	@parameter1 int = 5,
+	@parameter2 datatype OUTPUT
+	)
+	*/
+AS
+	/* SET NOCOUNT ON */	
+	SELECT *
+	FROM TAPTINBAIVIET t, BAIVIET b
+	WHERE	b.TieuDe LIKE N'L?ch Làm Vi?c'
+		AND t.MaBaiViet = b.MaBaiViet
