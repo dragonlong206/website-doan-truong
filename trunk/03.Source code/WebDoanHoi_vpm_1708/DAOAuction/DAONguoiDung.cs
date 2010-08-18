@@ -52,7 +52,7 @@ namespace DAOAuction
                 LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString);
                 db.NGUOIDUNG_add(
                    lpDTO.Username,
-                   lpDTO.Password,
+                   EncryptPassword(lpDTO.Password),
                    lpDTO.HoTen,
                    lpDTO.Email,
                    lpDTO.MaVaiTro
@@ -84,7 +84,7 @@ namespace DAOAuction
                 return db.NGUOIDUNG_update(
                     lpDTO.MaNguoiDung,
                     lpDTO.Username,
-                    lpDTO.Password,
+                    EncryptPassword(lpDTO.Password),
                     lpDTO.HoTen,
                     lpDTO.Email,
                     lpDTO.MaVaiTro
@@ -121,9 +121,10 @@ namespace DAOAuction
             try
             {
                 LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString);
+                string EncryptedPassword = EncryptPassword(password);
 
                 var query = from ng in db.NGUOIDUNGs
-                            where (ng.Username == tennguoidung) & (ng.Password == password)
+                            where (ng.Username == tennguoidung) & (ng.Password == EncryptedPassword)
                             select ng;
                 if (query.Count() > 0)
                     return query.First();
