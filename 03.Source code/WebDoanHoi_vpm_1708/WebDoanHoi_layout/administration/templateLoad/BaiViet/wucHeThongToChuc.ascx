@@ -26,7 +26,6 @@
                         <ItemStyle Width="30%" />
                      </asp:HyperLinkField>
                      
-                    <asp:BoundField DataField="noidung" HeaderText="Nội Dung"/>
                     <asp:ButtonField CommandName="XoaBai" HeaderText="Xóa Bài Viết" Text="Xóa" />
                 </Columns>
     </asp:GridView>       

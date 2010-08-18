@@ -29,9 +29,10 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
                 //lay thong tin va load len cac textbox
                 BUSHeThongToChuc BUSHeThongToChuc = new BUSHeThongToChuc();
                 HETHONGTOCHUC lpDTO = BUSHeThongToChuc.TimKiem(mahethongtochuc);
-                this.txtmahethongtochuc.Text = Convert.ToString(lpDTO.MaBai );
+              //  this.txtmahethongtochuc.Text = Convert.ToString(lpDTO.MaBai );
                 this.txttenhethongtochuc.Text = lpDTO.TieuDe ;
-                this.txtnoidung.Text = lpDTO.NoiDung ;
+                
+                this.ednoidung.Content = lpDTO.NoiDung ;
             }
         }
 
@@ -41,9 +42,9 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
             {
                 //lay thong tin tu textbox
                 HETHONGTOCHUC lpDTO = new HETHONGTOCHUC();
-                lpDTO.MaBai  = int.Parse(this.txtmahethongtochuc.Text);
+              //  lpDTO.MaBai  = int.Parse(this.txtmahethongtochuc.Text);
                 lpDTO.TieuDe  = this.txttenhethongtochuc.Text;
-                lpDTO.NoiDung  = this.txtnoidung.Text;
+                lpDTO.NoiDung  = this.ednoidung.Content;
 
                 //Goi ham cap nhat
                 BUSHeThongToChuc BUSHeThongToChuc = new BUSHeThongToChuc();
@@ -73,13 +74,13 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
             {
                 //lay thong tin tu textbox
                 HETHONGTOCHUC lpDTO = new HETHONGTOCHUC();
-                lpDTO.MaBai = int.Parse(this.txtmahethongtochuc.Text);
+                //lpDTO.MaBai = int.Parse(this.txtmahethongtochuc.Text);
                 lpDTO.TieuDe = this.txttenhethongtochuc.Text;
-                lpDTO.NoiDung = this.txtnoidung.Text;
+                lpDTO.NoiDung = this.ednoidung.Content;
 
                 //Goi ham cap nhat
                 BUSHeThongToChuc BUSHeThongToChuc = new BUSHeThongToChuc();
-                if (BUSHeThongToChuc.Them(lpDTO) == 0)
+                if (BUSHeThongToChuc.Them(lpDTO) == 1)
                 {
                     //Thong bao
                     lbThongBao.Text = "Thêm Thành Công";
