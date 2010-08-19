@@ -20,7 +20,22 @@ namespace WebDoanHoi_layout.administration.templateLoad.BaiViet
             if (!IsPostBack)
             {
                 int soDong = LoadBaiViet();
-                FilterSTT(soDong, 0, 10);
+                if (Request.QueryString["id"] != null)
+                {
+                    for (int i = 0; i < ((List<BAIVIET_getall_newResult>)this.GridViewBaiViet.DataSource).Count; i++)
+                    {
+                        if (((List<BAIVIET_getall_newResult>)this.GridViewBaiViet.DataSource)[i].MaBaiViet.ToString() == Request.QueryString["id"].ToString()) 
+                        {
+                            this.GridViewBaiViet.PageIndex = i / this.GridViewBaiViet.PageSize;
+                            this.GridViewBaiViet.DataBind();
+                            this.GridViewBaiViet.Rows[i % this.GridViewBaiViet.PageSize].CssClass = "selectedrow";
+                            break;
+                        }
+                    }
+                }
+                
+                    FilterSTT(soDong, this.GridViewBaiViet.PageIndex, 10);
+               
             }
             this.GridViewBaiViet.HeaderStyle.CssClass = "headerstyle";
         }

@@ -40,7 +40,7 @@ namespace BUSAuction
             DAOTapTinBaiViet TAPTINBAIVIET = new DAOTapTinBaiViet();
             return TAPTINBAIVIET.TimKiemMaTapTin(maTapTin);
         }
-        public TAPTINBAIVIET TimKiemMaBaiViet(int maBaiViet)
+        public List<TAPTINBAIVIET> TimKiemMaBaiViet(int maBaiViet)
         {
             DAOTapTinBaiViet TAPTINBAIVIET = new DAOTapTinBaiViet();
             return TAPTINBAIVIET.TimKiemMaBaiViet(maBaiViet);

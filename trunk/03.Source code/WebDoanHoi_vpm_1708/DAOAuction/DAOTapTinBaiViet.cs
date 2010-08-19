@@ -110,7 +110,7 @@ namespace DAOAuction
                 throw (ex);
             }
         }
-        public TAPTINBAIVIET TimKiemMaBaiViet(int mabaiviet)
+        public List<TAPTINBAIVIET> TimKiemMaBaiViet(int mabaiviet)
         {
             try
             {
@@ -120,7 +120,7 @@ namespace DAOAuction
                             where (ng.MaBaiViet == mabaiviet)
                             select ng;
                 if (query.Count() > 0)
-                    return query.First();
+                    return query.ToList<TAPTINBAIVIET>();
                 else
                     return null;
             }

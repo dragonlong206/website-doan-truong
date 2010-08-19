@@ -25,7 +25,8 @@
                         ItemStyle-Width="30%" SortExpression="mabaiviet" >
                         <ItemStyle Width="30%" />
                      </asp:HyperLinkField>
-                    <asp:BoundField DataField="tenloaibaiviet" HeaderText="Tên loại bài viết" />
+                     <asp:BoundField DataField="tenchuyenmuc" HeaderText="Chuyên mục" />
+                    <asp:BoundField DataField="tenloaibaiviet" HeaderText="Loại bài viết" />
                     <asp:BoundField DataField="ngaydang" HeaderText="Ngày đăng"/>
                     <asp:ButtonField CommandName="XoaBaiViet" HeaderText="Xóa Bài Viết" 
                         Text="Xóa" />
