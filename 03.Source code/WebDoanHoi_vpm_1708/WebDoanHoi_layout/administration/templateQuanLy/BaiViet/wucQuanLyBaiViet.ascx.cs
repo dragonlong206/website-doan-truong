@@ -9,6 +9,7 @@ using DTOAuction;
 using System.Collections.Generic;
 using System.Web.UI.MobileControls;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
 {
@@ -16,10 +17,43 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
     {
         static BAIVIET BaiVietTemp = new BAIVIET();
         #region Ham Chung
-#region Đức 6/8
+        #region Đức 17/8
         protected void Page_Load(object sender, EventArgs e)
         {
             load();
+        }
+        public int LoadTapTin()
+        {
+            List<TAPTINBAIVIET> lt = new List<TAPTINBAIVIET>();
+
+
+            BUSTapTinBaiViet BUSTapTinBaiViet = new BUSTapTinBaiViet();
+            int sodong;
+            BaiVietTemp = (BAIVIET)Session["BaiVietTemp"];
+            lt = BUSTapTinBaiViet.TimKiemMaBaiViet(BaiVietTemp.MaBaiViet);
+            if (lt != null)
+            {
+                this.GridViewTapTin.DataSource = lt;
+                GridViewTapTin.DataBind();
+                PanelMessage.Visible = false;
+                PanelDanhSach.Visible = true;
+                sodong = lt.Count;
+            }
+            else
+            {
+                lt = new List<TAPTINBAIVIET>();
+                this.GridViewTapTin.DataSource = lt;
+                GridViewTapTin.DataBind();
+                PanelMessage.Visible = true;
+                PanelDanhSach.Visible = true;
+                sodong = 0;
+            }
+            Session.Add("GridViewTapTinDataSource", lt);
+            List<TAPTINBAIVIET> lFileTemp = new List<TAPTINBAIVIET>();
+            Session.Add("FileUploadTemp", lFileTemp);
+            List<HttpPostedFile> lFileClientPath = new List<HttpPostedFile>();
+            Session.Add("FileClientTemp", lFileClientPath);
+            return sodong;
         }
         protected void load()
         {
@@ -35,45 +69,50 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
                     int mabaiviet = int.Parse(Request.QueryString["id"]);
                     BUSBaiViet BUSBaiViet = new BUSBaiViet();
                     BAIVIET lpDTO = BUSBaiViet.TimKiem(mabaiviet);
+
                     BaiVietTemp = lpDTO;
+                    Session.Add("BaiVietTemp", BaiVietTemp);
                     BUSChuyenMuc BUSChuyenMuc = new BUSChuyenMuc();
                     CHUYENMUC cmDTO = BUSChuyenMuc.LayChuyenMucTheoBaiViet((int)lpDTO.MaLoaiBaiViet);
-                   //this.txtngaydang.Text = dt.ToString("dd/MM/yyyy");
+                    //this.txtngaydang.Text = dt.ToString("dd/MM/yyyy");
                     this.txtnoidung.Value = lpDTO.NoiDung;
                     this.txtTomTat.Text = lpDTO.TomTat;
                     this.txttieude.Text = lpDTO.TieuDe;
-                    this.FileUploadTapTin.Visible = true;
-                    this.PanelBtnUpload.Visible = true;
-                    if (lpDTO.HinhAnh!="")
+                    if (lpDTO.HinhAnh != "")
                     {
-                        
-                        this.lbAnhDaiDien.Text = @"<img src='~\Uploads/" + lpDTO.HinhAnh+"'style ='width:170px; height:170px' />";
-                       // this.imgAnhDaiDien.Visible = true;
+
+                        this.imgAnhDaiDien.ImageUrl = @"~\Uploads/" + lpDTO.HinhAnh;
                     }
                     // load ddl
                     load_ddlChuyenMuc();
                     ddlChuyenMuc.SelectedValue = cmDTO.MaChuyenMuc.ToString();
                     load_ddlLBV(cmDTO.MaChuyenMuc);
                     ddlLoaiBaiViet.SelectedValue = lpDTO.MaLoaiBaiViet.ToString();
-                    BUSTapTinBaiViet busTapTinBaiViet = new BUSTapTinBaiViet();
-                    TAPTINBAIVIET tapTinBaiViet = busTapTinBaiViet.TimKiemMaBaiViet(mabaiviet);
-                    if (tapTinBaiViet != null)
-                    {
-                        hplDownloadLink.NavigateUrl = tapTinBaiViet.DuongDan.ToString();
-                        hplDownloadLink.Text = tapTinBaiViet.TenTapTin.ToString();
-                    }
+                    int soDong = LoadTapTin();
+                    FilterSTT(soDong, 0, 30);
+                    PanelBtnUpload.Visible = true;
                 }
                 else
                 {
                     load_ddlChuyenMuc();
                     ddlChuyenMuc.SelectedValue = "1";
                     load_ddlLBV(1);
+                    PanelBtnUpload.Visible = false;
                 }
-                
             }
 
         }
-#endregion
+        //Do STT
+        public void FilterSTT(int TongSoDong, int TrangHienTai, int SoDongTrenTrang)
+        {
+            int stt = 0;
+            for (int i = TrangHienTai * SoDongTrenTrang; i < TongSoDong && i < (TrangHienTai + 1) * SoDongTrenTrang; i++)
+            {
+                GridViewTapTin.Rows[stt].Cells[0].Text = (i + 1).ToString();
+                stt += 1;
+            }
+        }
+        #endregion
         protected void load_ddlChuyenMuc()
         {
             // load ddlChuyenMuc
@@ -85,7 +124,7 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
                 ListItem li = new ListItem(lstCM[i].TenChuyenMuc.ToString(), lstCM[i].MaChuyenMuc.ToString());
                 this.ddlChuyenMuc.Items.Add(li);
             }
-            
+
         }
         protected void load_ddlLBV(int machuyenmuc)
         {
@@ -103,7 +142,32 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
         {
             load_ddlLBV(int.Parse(ddlChuyenMuc.SelectedValue));
         }
-        #region Đức sửa 4/8
+        #region Đức sửa 17/8
+        #region chỉnh sửa ảnh đại diện
+        public bool ThumbnailCallback()
+        {
+            return false;
+        }
+        protected System.Drawing.Image getThumbnailImage(string imgFileName)
+        {
+            System.Drawing.Image.GetThumbnailImageAbort myCallback =
+        new System.Drawing.Image.GetThumbnailImageAbort(ThumbnailCallback);
+            Bitmap myBitmap = new Bitmap(imgFileName);
+            System.Drawing.Image myThumbnail = myBitmap.GetThumbnailImage(
+            300, 300, myCallback, IntPtr.Zero);
+            myBitmap.Dispose();
+            return myThumbnail;
+        }
+        protected void SaveImageThumbnail(string imgSourceFile, string desPath, bool deleteSource)
+        {
+            System.Drawing.Image img = getThumbnailImage(imgSourceFile);
+            if (deleteSource == true)
+                System.IO.File.Delete(imgSourceFile);
+            img.Save(desPath, System.Drawing.Imaging.ImageFormat.Png);
+        }
+        #endregion
+
+
         protected void btnCapNhat_Click(object sender, EventArgs e)
         {
             try
@@ -116,36 +180,46 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
                 lpDTO.NoiDung = this.txtnoidung.Value;
                 lpDTO.TieuDe = this.txttieude.Text;
                 lpDTO.TomTat = this.txtTomTat.Text;
-                if (this.fulImage.HasFile)
-                {
-                    String currentPath = Server.MapPath("~/Uploads/");
-                    String fileName = "anh_dai_dien" + lpDTO.NgayDang.Value.Day.ToString()
-                        + lpDTO.NgayDang.Value.Month.ToString() + lpDTO.NgayDang.Value.Year.ToString()
-                        + lpDTO.NgayDang.Value.Hour.ToString() + lpDTO.NgayDang.Value.Minute.ToString() + lpDTO.NgayDang.Value.Second.ToString() + ".jpg";
-                    lpDTO.HinhAnh = fileName;
-                    this.fulImage.SaveAs(currentPath + fileName);
-                }
+                BaiVietTemp = (BAIVIET)Session["BaiVietTemp"];
                 BUSBaiViet BUSBaiViet = new BUSBaiViet();
                 if (this.fulImage.HasFile)
                 {
-                    System.IO.File.Delete(Server.MapPath("~/Uploads/") + lpDTO.HinhAnh);
+                    if (BaiVietTemp.HinhAnh != "")
+                        System.IO.File.Delete(Server.MapPath("~/Uploads/") + BaiVietTemp.HinhAnh);
                     String currentPath = Server.MapPath("~/Uploads/");
                     String fileName = "anh_dai_dien" + lpDTO.NgayDang.Value.Day.ToString()
                         + lpDTO.NgayDang.Value.Month.ToString() + lpDTO.NgayDang.Value.Year.ToString()
                         + lpDTO.NgayDang.Value.Hour.ToString() + lpDTO.NgayDang.Value.Minute.ToString() + lpDTO.NgayDang.Value.Second.ToString() + ".jpg";
                     lpDTO.HinhAnh = fileName;
                     this.fulImage.SaveAs(currentPath + fileName);
+                    SaveImageThumbnail(currentPath + fileName, currentPath + fileName, true);
                 }
                 else
                 {
                     lpDTO.HinhAnh = BaiVietTemp.HinhAnh;
                 }
                 //Goi ham cap nhat
-                
+
                 if (BUSBaiViet.CapNhat(lpDTO) == 0)
                 {
                     //Thong bao
                     lbThongBao.Text = "Cập Nhật Thành Công";
+                    //Upload tập tin
+                    List<TAPTINBAIVIET> lTapTinDTO = new List<TAPTINBAIVIET>();
+                    string savePath = Server.MapPath("~/Uploads\\");
+                    string fileName;
+                    lTapTinDTO = (List<TAPTINBAIVIET>)Session["FileUploadTemp"];
+                    List<HttpPostedFile> lFile = (List<HttpPostedFile>)Session["FileClientTemp"];
+                    BUSTapTinBaiViet BUSTapTinBaiViet = new BUSTapTinBaiViet();
+                    for (int i = 0; i < lTapTinDTO.Count && i < lFile.Count; i++)
+                    {
+                        lFile[i].SaveAs(savePath + lTapTinDTO[i].TenTapTin);
+                        if (BUSTapTinBaiViet.Them(lTapTinDTO[i]) == 0)
+                        {
+                            MessageBox.Show("Upload tập tin " + lTapTinDTO[i].TenTapTin + " thất bại.");
+
+                        }
+                    }
                     lbThongBao.Visible = true;
                     Response.Redirect("~/administration/BaiViet.aspx?id=" + lpDTO.MaBaiViet.ToString());
                 }
@@ -163,7 +237,7 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
             }
         }
         #endregion
-        #region Đức sửa hàm Thêm 5/8
+        #region Đức sửa hàm Thêm 17/8
         protected void btnThem_Click(object sender, EventArgs e)
         {
             //txtngaydang.Text = DateTime.Now.ToShortDateString();
@@ -171,7 +245,7 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
             {
                 //lay thong tin tu textbox
                 BAIVIET lpDTO = new BAIVIET();
-                
+
                 lpDTO.MaLoaiBaiViet = int.Parse(ddlLoaiBaiViet.SelectedValue);
                 lpDTO.NgayDang = Convert.ToDateTime(System.DateTime.Now);
                 lpDTO.NoiDung = this.txtnoidung.Value;
@@ -185,9 +259,11 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
                         + lpDTO.NgayDang.Value.Month.ToString() + lpDTO.NgayDang.Value.Year.ToString()
                         + lpDTO.NgayDang.Value.Hour.ToString() + lpDTO.NgayDang.Value.Minute.ToString() + lpDTO.NgayDang.Value.Second.ToString() + ".jpg";
                     lpDTO.HinhAnh = fileName;
+                    // SaveImageThumbnail(this.fulImage.FileName.)
+
                     this.fulImage.SaveAs(currentPath + fileName);
                 }
-                
+
                 //Goi ham cap nhat
                 BUSBaiViet BUSBaiViet = new BUSBaiViet();
                 if (BUSBaiViet.Them(lpDTO) == 1)
@@ -250,11 +326,11 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
                 lbThongBao.Visible = true;
             }
         }
-#endregion
+        #endregion
 
         #endregion
 
-        #region Nhi 11/8
+        #region Upload file
         protected void btnUploadFiles_Click(object sender, EventArgs e)
         {
             PanelUploadTapTinBaiViet.Visible = true;
@@ -263,7 +339,7 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
 
         protected void btnUpload_Click(object sender, EventArgs e)
         {
-            
+
             if (FileUploadTapTin.HasFile)
             {
                 SaveFile(FileUploadTapTin.PostedFile);
@@ -289,77 +365,26 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.BaiViet
             // Kiem tra xem da ton tai file co ten giong voi file nguoi dung muon up chua
             if (System.IO.File.Exists(pathToCheck))
             {
-                int counter = 2;
-                while (System.IO.File.Exists(pathToCheck))
-                {
-                    DialogResult result;
-                    string message = "Tên file " + tempfileName + " đã tồn tại. Bạn có muốn ghi đè lên không?";
-                    result = MessageBox.Show(message, "Caution", MessageBoxButtons.YesNo);
-                    if (result == DialogResult.No)
-                    {
-                        // them (so) vao sau ten file
-                        int point = fileName.LastIndexOf('.');
-                        string nameNumber = "(" + counter.ToString() + ")";
-                        tempfileName = fileName.Insert(point, nameNumber);
-                        pathToCheck = savePath + tempfileName;
-                        counter++;
-                    }
-                    else
-                    {
-                        overwrite = true;
-                        LabelUploadStatus.Text = "File của bạn đã được ghi đè thành công.";
-                        break;
-                    }
-                }
-
-                fileName = tempfileName;
-                if (counter > 2)
-                    LabelUploadStatus.Text = "File của bạn đã được ghi dưới tên: " + fileName;
+   
+                MessageBox.Show("Tập tin trùng với tập tin đã có trên csdl");
             }
             else
             {
-                // Thong bao la da upload thanh cong
-                LabelUploadStatus.Text = "File của bạn đã được ghi thành công.";
-                imgBtnXoa.Visible = true;
+                // Thong bao la da upload thanh cong               
+                TAPTINBAIVIET ttbvDTO = new TAPTINBAIVIET();
+                ttbvDTO.TenTapTin = fileName;
+                string linkDir = "~/Uploads/" + fileName;
+                ttbvDTO.DuongDan = linkDir;
+                ttbvDTO.MaBaiViet = int.Parse(Request.QueryString["id"]);
+                List<TAPTINBAIVIET> gvTapTinDS = (List<TAPTINBAIVIET>)Session["GridViewTapTinDataSource"];
+                gvTapTinDS.Add(ttbvDTO);
+                this.GridViewTapTin.DataSource = gvTapTinDS;
+                this.GridViewTapTin.DataBind();
+                FilterSTT(gvTapTinDS.Count, 0, 30);
+                ((List<TAPTINBAIVIET>)Session["FileUploadTemp"]).Add(ttbvDTO);
+                ((List<HttpPostedFile>)Session["FileClientTemp"]).Add(file);
             }
 
-            savePath += fileName;
-
-            //Luu file
-            FileUploadTapTin.SaveAs(savePath);
-
-            //Duong dan de tai file
-            string linkDir = "~/Uploads/" + fileName;
-
-            //Them vao bang TapTin
-            //id la tham so truyen vao url, la id cua bai viet lien quan den tap tin
-
-            if (Request.QueryString["id"] != null)
-            {
-                if (overwrite == false)
-                {
-                    int maBaiViet = int.Parse(Request.QueryString["id"]);
-
-                    BUSTapTinBaiViet busTapTin = new BUSTapTinBaiViet();
-                    int numberTapTin = busTapTin.TimSoLuongTapTin();
-                    TAPTINBAIVIET lpDTO = new TAPTINBAIVIET();
-                    lpDTO.TenTapTin = fileName;
-                    lpDTO.DuongDan = linkDir;
-                    lpDTO.MaBaiViet = maBaiViet;
-                    lpDTO.MaTapTin = numberTapTin + 1;
-                    busTapTin.Them(lpDTO);
-                }
-                else
-                {
-                    int maBaiViet = int.Parse(Request.QueryString["id"]);
-
-                    BUSTapTinBaiViet busTapTin = new BUSTapTinBaiViet();
-                    TAPTINBAIVIET lpDTO = busTapTin.TimKiemTenTapTin(fileName);
-
-                    lpDTO.MaBaiViet = maBaiViet;
-                    busTapTin.CapNhat(lpDTO);
-                }
-            }
         }
 
         #endregion

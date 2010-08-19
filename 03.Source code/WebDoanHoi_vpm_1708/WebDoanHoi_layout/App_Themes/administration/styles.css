@@ -387,7 +387,10 @@ label
 	font-weight: bold;
 	border: solid 1px #676767;
 }
-
+.selectedrow
+{
+	background-color:Yellow;
+}
 .headerstyle th a
 {
 	font-weight: bold;
