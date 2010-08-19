@@ -15,26 +15,26 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
     public partial class wucQuanLyNguoiDung : System.Web.UI.UserControl
     {
         #region Ham Chung
+        static int MaNguoiDung;
         protected void Page_Load(object sender, EventArgs e)
         {
             //Thong tin nguoi dung
-            NGUOIDUNG a = new NGUOIDUNG();
-            a.MaNguoiDung = 1;
-            Session["NguoiDung"] = a;
-
-            if (Request.QueryString["id"] != null)
+            if (!IsPostBack)
             {
-                //lay ma
-                int mahoatdong = int.Parse(Request.QueryString["id"]);
+                if (Request.QueryString["id"] != null)
+                {
+                    //lay ma
+                    MaNguoiDung = int.Parse(Request.QueryString["id"]);
 
-                //lay thong tin va load len cac textbox
-                BUSNguoiDung BUSNguoiDung = new BUSNguoiDung();
-                NGUOIDUNG lpDTO = BUSNguoiDung.TimKiem(mahoatdong);
-                txtmasinhvien.Text = lpDTO.MaNguoiDung.ToString();
-                txtpass.Text = lpDTO.Password ;
-                txthoten.Text = lpDTO.HoTen ;
-                txtemail.Text = lpDTO.Email ;
-                txtvaitro.Text = lpDTO.MaVaiTro.ToString();
+                    //lay thong tin va load len cac textbox
+                    BUSNguoiDung BUSNguoiDung = new BUSNguoiDung();
+                    NGUOIDUNG lpDTO = BUSNguoiDung.TimKiem(MaNguoiDung);
+                    txtmasinhvien.Text = lpDTO.Username;
+                    txtpass.Text = lpDTO.Password;
+                    txthoten.Text = lpDTO.HoTen;
+                    txtemail.Text = lpDTO.Email;
+                    txtvaitro.Text = lpDTO.MaVaiTro.ToString();
+                }
             }
         }
 
@@ -44,7 +44,8 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
             {
                 //lay thong tin tu textbox
                 NGUOIDUNG lpDTO = new NGUOIDUNG();
-                lpDTO.MaNguoiDung  = int.Parse(txtmasinhvien.Text);
+                lpDTO.MaNguoiDung  = MaNguoiDung;
+                lpDTO.Username = txtmasinhvien.Text;
                 lpDTO.Password  = txtpass.Text;
                 lpDTO.HoTen  = txthoten.Text;
                 lpDTO.Email  = txtemail.Text;
@@ -57,7 +58,7 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
                     //Thong bao
                     lbThongBao.Text = "Cập Nhật Thành Công";
                     lbThongBao.Visible = true;
-                    //Response.Redirect("LoaiMatHang.aspx");
+                    Response.Redirect("NguoiDung.aspx?id=" + MaNguoiDung.ToString());
                 }
                 else
                 {
@@ -78,7 +79,8 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
             {
                 //lay thong tin tu textbox
                 NGUOIDUNG lpDTO = new NGUOIDUNG();
-                lpDTO.MaNguoiDung = int.Parse(txtmasinhvien.Text);
+                lpDTO.MaNguoiDung = 0;
+                lpDTO.Username = txtmasinhvien.Text;
                 lpDTO.Password = txtpass.Text;
                 lpDTO.HoTen = txthoten.Text;
                 lpDTO.Email = txtemail.Text;
@@ -86,12 +88,12 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
 
                 //Goi ham cap nhat
                 BUSNguoiDung BUSNguoiDung = new BUSNguoiDung();
-                if (BUSNguoiDung.Them(lpDTO) == 0)
+                if (BUSNguoiDung.Them(lpDTO) == 1)
                 {
                     //Thong bao
                     lbThongBao.Text = "Thêm Thành Công";
                     lbThongBao.Visible = true;
-                    //Response.Redirect("LoaiMatHang.aspx");
+                    Response.Redirect("NguoiDung.aspx");
                 }
                 else
                 {
@@ -110,21 +112,20 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
         {
             try
             {
-                //lay thong tin tu textbox
-                int mahoatdong = int.Parse(Request.QueryString["id"]);
+                BUSNguoiDung BUSNguoiDung = new BUSNguoiDung();
+                NGUOIDUNG lpDTO = BUSNguoiDung.TimKiem(MaNguoiDung);
 
                 //xac nhan truoc khi xoa
-                DialogResult rs = MessageBox.Show("Bạn có chắc là muốn xoá Hoạt Động <" + mahoatdong + "> không?", "Warning!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult rs = MessageBox.Show("Bạn có chắc là muốn xoá Sinh Viên <" + lpDTO.Username + "> không?", "Warning!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (rs == DialogResult.Yes)
                 {
                     //Goi ham xoa
-                    BUSNguoiDung BUSNguoiDung = new BUSNguoiDung();
-                    if (BUSNguoiDung.Xoa(mahoatdong) == 0)
+                    if (BUSNguoiDung.Xoa(MaNguoiDung) == 0)
                     {
                         //Thong bao
                         lbThongBao.Text = "Xóa Thành Công";
                         lbThongBao.Visible = true;
-                        Response.Redirect("HoatDong.aspx");
+                        Response.Redirect("NguoiDung.aspx");
                     }
                     else
                     {
@@ -134,13 +135,13 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
                 }
                 else
                 {
-                    Response.Redirect("HoatDong.aspx");
+                    Response.Redirect("NguoiDung.aspx");
                 }
             }
 
             catch (Exception ex)
             {
-                lbThongBao.Text = "Xoa Không Thành Công";
+                lbThongBao.Text = "Xóa Không Thành Công";
                 lbThongBao.Visible = true;
             }
         }

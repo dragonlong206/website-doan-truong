@@ -54,7 +54,8 @@ namespace DAOAuction
                     lpDTO.NgayDienRa ,
                     lpDTO.MaLoaiHoatDong ,
                     lpDTO.ThoiGianBatDauDangKy   ,
-                    lpDTO.ThoiGianKetThucDangKy  
+                    lpDTO.ThoiGianKetThucDangKy  ,
+                    lpDTO.HinhAnh
                     );
                  return 1;
             }
@@ -89,7 +90,8 @@ namespace DAOAuction
                     lpDTO.NgayDienRa,
                     lpDTO.MaLoaiHoatDong ,
                     lpDTO.ThoiGianBatDauDangKy    ,
-                    lpDTO.ThoiGianKetThucDangKy 
+                    lpDTO.ThoiGianKetThucDangKy ,
+                    lpDTO.HinhAnh
                     );
             }
             catch (Exception ex)

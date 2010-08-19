@@ -17,21 +17,20 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
         protected void Page_Load(object sender, EventArgs e)
         {
             //Thong tin nguoi dung
-            NGUOIDUNG a = new NGUOIDUNG();
-            a.MaNguoiDung = 1;
-            Session["NguoiDung"] = a;
+    if (!IsPostBack)
+    {
+        if (Request.QueryString["id"] != null)
+        {
+            //lay ma
+            int mahoatdong = int.Parse(Request.QueryString["id"]);
 
-            if (Request.QueryString["id"] != null)
-            {
-                //lay ma
-                int mahoatdong = int.Parse(Request.QueryString["id"]);
-
-                //lay thong tin va load len cac textbox
-                BUSLoaiVaiTro BUSLoaiVaiTro = new BUSLoaiVaiTro();
-                LOAIVAITRO lpDTO = BUSLoaiVaiTro.TimKiem(mahoatdong);
-                txtmaloaivaitro.Text = lpDTO.MaLoaiVaiTro.ToString();
-                txttenloaivaitro.Text = lpDTO.TenLoaiVaiTro ;
-            }
+            //lay thong tin va load len cac textbox
+            BUSLoaiVaiTro BUSLoaiVaiTro = new BUSLoaiVaiTro();
+            LOAIVAITRO lpDTO = BUSLoaiVaiTro.TimKiem(mahoatdong);
+            txtmaloaivaitro.Text = lpDTO.MaLoaiVaiTro.ToString();
+            txttenloaivaitro.Text = lpDTO.TenLoaiVaiTro;
+        }
+    }
         }
 
         protected void btnCapNhat_Click(object sender, EventArgs e)
@@ -50,7 +49,7 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
                     //Thong bao
                     lbThongBao.Text = "Cập Nhật Thành Công";
                     lbThongBao.Visible = true;
-                    //Response.Redirect("LoaiMatHang.aspx");
+                    Response.Redirect("LoaiVaiTro.aspx?id=" + txtmaloaivaitro.Text);
                 }
                 else
                 {
@@ -71,17 +70,17 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
             {
                 //lay thong tin tu textbox
                 LOAIVAITRO lpDTO = new LOAIVAITRO();
-                lpDTO.MaLoaiVaiTro = int.Parse(txtmaloaivaitro.Text);
+                lpDTO.MaLoaiVaiTro = 0;
                 lpDTO.TenLoaiVaiTro = txttenloaivaitro.Text;
 
                 //Goi ham cap nhat
                 BUSLoaiVaiTro BUSLoaiVaiTro = new BUSLoaiVaiTro();
-                if (BUSLoaiVaiTro.Them(lpDTO) == 0)
+                if (BUSLoaiVaiTro.Them(lpDTO) == 1)
                 {
                     //Thong bao
                     lbThongBao.Text = "Thêm Thành Công";
                     lbThongBao.Visible = true;
-                    //Response.Redirect("LoaiMatHang.aspx");
+                    Response.Redirect("LoaiVaiTro.aspx");
                 }
                 else
                 {
@@ -114,7 +113,7 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
                         //Thong bao
                         lbThongBao.Text = "Xóa Thành Công";
                         lbThongBao.Visible = true;
-                        Response.Redirect("HoatDong.aspx");
+                        Response.Redirect("LoaiVaiTro.aspx");
                     }
                     else
                     {
@@ -124,13 +123,13 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.NguoiDung
                 }
                 else
                 {
-                    Response.Redirect("HoatDong.aspx");
+                    Response.Redirect("LoaiVaiTro.aspx");
                 }
             }
 
             catch (Exception ex)
             {
-                lbThongBao.Text = "Xoa Không Thành Công";
+                lbThongBao.Text = "Xóa Không Thành Công";
                 lbThongBao.Visible = true;
             }
         }

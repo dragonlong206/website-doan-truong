@@ -9,12 +9,17 @@ using DTOAuction;
 using System.Web.UI.MobileControls;
 using System.Windows.Forms;
 using System.Globalization;
+using System.IO;
 
 namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
 {
     public partial class wucQuanLyHoatDong : System.Web.UI.UserControl
     {
         #region Ham Chung
+
+        static string link;
+        static string linkTemp;
+        static string defaultLink = "~/Uploads/HinhAnhHoatDong/";
 
         protected bool KiemTra()
         {
@@ -56,10 +61,6 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
                 {
                     LoadHoatDong();
                 }
-                //else
-                //{
-                //    Response.Redirect("~/administration/index.aspx");
-                //}
             }
         }
 
@@ -76,6 +77,21 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
             txtngaydienra.Text = ((DateTime)lpDTO.NgayDienRa).ToString("dd/MM/yyyy");
             txtthoigianbatdaudangky.Text = ((DateTime)lpDTO.ThoiGianBatDauDangKy).ToString("dd/MM/yyyy");
             txtthoigianketthucdangky.Text = ((DateTime)lpDTO.ThoiGianKetThucDangKy).ToString("dd/MM/yyyy");
+
+            if (lpDTO.HinhAnh == "")
+            {
+                link = "";
+                image.Visible = false;
+            }
+            else
+            {
+                if (lpDTO.HinhAnh != "")
+                {
+                    link = defaultLink + lpDTO.HinhAnh;
+                    image.ImageUrl = link;
+                    image.Visible = true;
+                }
+            }
         }
         protected void btnCapNhat_Click(object sender, EventArgs e)
         {
@@ -98,6 +114,18 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
                 lpDTO.ThoiGianBatDauDangKy = DateTime.Parse(txtthoigianbatdaudangky.Text, culture);
                 lpDTO.ThoiGianKetThucDangKy = DateTime.Parse(txtthoigianketthucdangky.Text, culture);
 
+                if (image.ImageUrl == link)
+                {
+                    lpDTO.HinhAnh = link.Substring(defaultLink.Length);
+                }
+                else
+                {
+                    if (image.ImageUrl != "")
+                    {
+                        lpDTO.HinhAnh = RenameHinhAnh(image.ImageUrl, lpDTO.TenHoatDong).Substring(defaultLink.Length);
+                    }
+                }
+
                 //Goi ham cap nhat
                 BUSHoatDong BUSHoatDong = new BUSHoatDong();
                 if (BUSHoatDong.CapNhat(lpDTO) == 0)
@@ -105,7 +133,9 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
                     //Thong bao
                     lbThongBao.Text = "Cập Nhật Thành Công";
                     lbThongBao.Visible = true;
-                    //Response.Redirect("LoaiMatHang.aspx");
+                    link = "";
+                    linkTemp = "";
+                    Response.Redirect("~/administration/HoatDong.aspx?id=" + Request.QueryString["id"]);
                 }
                 else
                 {
@@ -120,7 +150,9 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
                 lbThongBao.Visible = true;
             }
 
-            Response.Redirect("HoatDong.aspx?id=" + Request.QueryString["id"]);
+            DeleteHinhAnh(linkTemp);
+            link = "";
+            linkTemp = "";
         }
         protected void btnThem_Click(object sender, EventArgs e)
         {
@@ -133,6 +165,7 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
             {
                 //lay thong tin tu textbox
                 HOATDONG lpDTO = new HOATDONG();
+                lpDTO.MaHoatDong = 0;
                 lpDTO.TenHoatDong = txttenhoatdong.Text;
                 lpDTO.MaLoaiHoatDong = int.Parse(ddlLoaiHoatDong.SelectedValue);
 
@@ -142,6 +175,18 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
                 lpDTO.ThoiGianBatDauDangKy = DateTime.Parse(txtthoigianbatdaudangky.Text, culture);
                 lpDTO.ThoiGianKetThucDangKy = DateTime.Parse(txtthoigianketthucdangky.Text, culture);
 
+                if (image.ImageUrl == link)
+                {
+                    lpDTO.HinhAnh = link.Substring(defaultLink.Length);
+                }
+                else
+                {
+                    if (image.ImageUrl != "")
+                    {
+                       lpDTO.HinhAnh = RenameHinhAnh (image.ImageUrl, lpDTO.TenHoatDong).Substring(defaultLink.Length);
+                    }
+                }
+
                 //Goi ham cap nhat
                 BUSHoatDong BUSHoatDong = new BUSHoatDong();
                 if (BUSHoatDong.Them(lpDTO) == 1)
@@ -149,7 +194,9 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
                     //Thong bao
                     lbThongBao.Text = "Thêm Thành Công";
                     lbThongBao.Visible = true;
-                    //Response.Redirect("LoaiMatHang.aspx");
+                    linkTemp = "";
+                    link = "";
+                    Response.Redirect("~/administration/HoatDong.aspx");
                 }
                 else
                 {
@@ -162,9 +209,12 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
             {
                 lbThongBao.Text = "Thêm Không Thành Công";
                 lbThongBao.Visible = true;
+                throw ex;
             }
 
-            Response.Redirect("HoatDong.aspx");
+            DeleteHinhAnh(linkTemp);
+            linkTemp = "";
+            link = "";
         }
         protected void btnXoa_Click(object sender, EventArgs e)
         {
@@ -173,18 +223,26 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
                 //lay thong tin tu textbox
                 int mahoatdong = int.Parse(Request.QueryString["id"]);
 
+                BUSHoatDong BUSHoatDong = new BUSHoatDong();
+                HOATDONG hoatdong = BUSHoatDong.TimKiem(mahoatdong);
+
                 //xac nhan truoc khi xoa
-                DialogResult rs = MessageBox.Show("Bạn có chắc là muốn xoá Hoạt Động <" + mahoatdong + "> không?", "Warning!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult rs = MessageBox.Show("Bạn có chắc là muốn xoá Hoạt Động <" + hoatdong.TenHoatDong + "> không?", "Warning!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (rs == DialogResult.Yes)
                 {
                     //Goi ham xoa
-                    BUSHoatDong BUSHoatDong = new BUSHoatDong();
+
+                    BUSDangKyHoatDong BUSDangKyHoatDong = new BUSDangKyHoatDong();
+                    BUSDangKyHoatDong.Xoa(mahoatdong);
+
                     if (BUSHoatDong.Xoa(mahoatdong) == 0)
                     {
                         //Thong bao
                         lbThongBao.Text = "Xóa Thành Công";
                         lbThongBao.Visible = true;
-                        Response.Redirect("HoatDong.aspx");
+                        DeleteHinhAnh(link);
+                        link = "";
+                        Response.Redirect("~/administration/HoatDong.aspx");
                     }
                     else
                     {
@@ -194,7 +252,7 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
                 }
                 else
                 {
-                    Response.Redirect("HoatDong.aspx");
+                    Response.Redirect("~/administration/HoatDong.aspx");
                 }
             }
 
@@ -204,7 +262,95 @@ namespace WebDoanHoi_layout.administration.templateQuanLy.HoatDong
                 lbThongBao.Visible = true;
             }
         }
-
         #endregion
+
+        protected void DeleteHinhAnh(string path)
+        {
+            try
+            {
+                FileInfo theFile = new FileInfo(Server.MapPath(path));
+                if (theFile.Exists)
+                {
+                    File.Delete(Server.MapPath(path));
+                }
+                else
+                {
+                    throw new FileNotFoundException();
+                }
+            }
+            catch (FileNotFoundException)
+            {
+
+            }
+            catch (System.Exception)
+            {
+
+            }
+        }
+
+        protected string RenameHinhAnh(string oldPath, string newName)
+        {
+            try
+            {
+                FileInfo theFile = new FileInfo(Server.MapPath(oldPath));
+                if (theFile.Exists)
+                {
+                    string originalFileName = oldPath;
+                    int pointIndex = originalFileName.LastIndexOf('.');
+                    string extension = originalFileName.Substring(pointIndex, originalFileName.Length - pointIndex);
+
+                    string fileName = defaultLink + newName + extension;
+
+                    File.Move(Server.MapPath(oldPath), Server.MapPath(fileName));
+
+                    return fileName;
+                }
+                else
+                {
+                    throw new FileNotFoundException();
+                }
+            }
+            catch (FileNotFoundException)
+            {
+                return "";
+            }
+            catch (System.Exception)
+            {
+                return "";
+            }
+        }
+
+        protected void btLoad_Click(object sender, EventArgs e)
+        {
+            if (FileUpload.FileName != "")
+            {
+                string originalFileName = FileUpload.FileName;
+                int pointIndex = originalFileName.LastIndexOf('.');
+                string extension = originalFileName.Substring(pointIndex, originalFileName.Length - pointIndex);
+
+                string textFileName = "temp";
+
+                string fileName = textFileName + extension;
+
+
+                string savePath = Server.MapPath(defaultLink) + fileName;
+
+                FileUpload.SaveAs(savePath);
+
+                image.ImageUrl = defaultLink + fileName;
+                image.Visible = true;
+
+                linkTemp = image.ImageUrl;
+            }
+            else
+            {
+                linkTemp = "";
+            }
+        }
+
+        protected void XoaDKHoatDong()
+        {
+            int mahoatdong = int.Parse(Request.QueryString["id"]);
+        }
     }
 }

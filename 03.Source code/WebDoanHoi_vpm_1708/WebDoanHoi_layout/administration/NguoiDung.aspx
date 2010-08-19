@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/AdminDefault.master" AutoEventWireup="true" CodeFile="NguoiDung.aspx.cs" Inherits="administration_NguoiDung" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/AdminDefault.master" AutoEventWireup="true" CodeFile="NguoiDung.aspx.cs" Inherits="administration_NguoiDung" Title="Danh sách Sinh viên - Cán bộ" %>
 <%@ Register TagPrefix="Auction" TagName="AuctionNguoiDung" Src="~/administration/templateLoad/NguoiDung/wucNguoiDung.ascx" %>
 <%@ Register TagPrefix="Auction" TagName="AuctionQuanLyNguoiDung" Src="~/administration/templateQuanLy/NguoiDung/wucQuanLyNguoiDung.ascx" %>
 

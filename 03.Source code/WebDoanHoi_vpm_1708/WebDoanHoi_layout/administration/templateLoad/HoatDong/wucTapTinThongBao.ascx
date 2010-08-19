@@ -13,22 +13,20 @@
     <asp:GridView ID="GridViewTapTin" runat="server" 
                 AutoGenerateColumns="False" 
                 CssClass="tablestyle" DataKeyNames="mataptin" AllowPaging="True" 
-                onpageindexchanging="GridViewTapTin_PageIndexChanging" 
-            onrowcommand="GridViewTapTin_RowCommand">             
+                onpageindexchanging="GridViewTapTin_PageIndexChanging">             
                 <Columns>
                     <asp:BoundField HeaderText="STT" />
+                    <asp:BoundField DataField="mataptin" HeaderText="Tập tin" Visible ="false" />
                     
-                    <asp:HyperLinkField DataTextField="TenTapTin" HeaderText="Tập tin" 
-                        DataNavigateUrlFields="MaTapTin" 
-                        DataNavigateUrlFormatString="~/TapTinThongBao.aspx?id={0}" 
-                        ItemStyle-Width="30%" SortExpression="MaTapTin" >
+                    <asp:HyperLinkField DataTextField="tentaptin" HeaderText="Tập tin" 
+                        NavigateUrl="~/Default.aspx" DataNavigateUrlFields="mataptin" 
+                        DataNavigateUrlFormatString="~/Default.aspx?id={0}" 
+                        ItemStyle-Width="30%" SortExpression="mataptin" >
                         <ItemStyle Width="30%" />
                      </asp:HyperLinkField>
                      
-                    <asp:BoundField DataField="DuongDan" HeaderText="Đường dẫn"/>
-                    <asp:BoundField DataField="MaThongBao" HeaderText="Mã thông báo" />
-                    <asp:ButtonField CommandName="XoaTapTin" HeaderText="Xóa Tập Tin Thông Báo" 
-                        Text="Xóa" />
+                    <asp:BoundField DataField="duongdan" HeaderText="Đường dẫn"/>
+                    <asp:BoundField DataField="mabaiviet" HeaderText="Mã bài viết" />
                 </Columns>
     </asp:GridView>       
             

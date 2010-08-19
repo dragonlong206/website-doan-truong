@@ -18,6 +18,6 @@ public partial class administration_LoaiVaiTro : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["ADMIN"] == null || ((NGUOIDUNG)Session["ADMIN"]).MaVaiTro != 3)
-            Response.Redirect("~/administration/index.aspx?id=16");
+            Response.Redirect("~/administration/index.aspx");
     }
 }

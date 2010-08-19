@@ -10,7 +10,7 @@ namespace BUSAuction
     public class BUSNguoiDung
     {
         #region Ham chung: Load Them Xoa Capnhat Timkiem 15/07/2010
-        public List<NGUOIDUNG> SelectNGUOIDUNGsAll()
+        public List<NGUOIDUNG_getallResult> SelectNGUOIDUNGsAll()
         {
             DAONguoiDung NGUOIDUNG = new DAONguoiDung();
             return NGUOIDUNG.SelectNGUOIDUNGsAll ();

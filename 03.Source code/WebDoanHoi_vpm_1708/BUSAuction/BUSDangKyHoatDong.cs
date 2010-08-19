@@ -67,5 +67,11 @@ namespace BUSAuction
             return DANGKYHOATDONG.TimKiem(manguoidung, mahoatdong);
         }
         #endregion
+
+        public int Xoa(int mahoatdong)
+        {
+            DAODangKyHoatDong DANGKYHOATDONG = new DAODangKyHoatDong();
+            return DANGKYHOATDONG.Xoa(mahoatdong);
+        }
     }
 }
