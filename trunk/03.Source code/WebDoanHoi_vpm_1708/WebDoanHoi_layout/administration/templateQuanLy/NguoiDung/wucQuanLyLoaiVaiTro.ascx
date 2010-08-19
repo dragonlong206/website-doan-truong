@@ -1,4 +1,26 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="wucQuanLyLoaiVaiTro.ascx.cs" Inherits="WebDoanHoi_layout.administration.templateQuanLy.NguoiDung.wucQuanLyLoaiVaiTro" %>
+<style type="text/css">
+    .style1
+    {
+        width: 100%;
+    }
+    .style2
+    {
+        width: 114px;
+    }
+    .style3
+    {
+        width: 115px;
+    }
+    .style4
+    {
+        width: 232px;
+    }
+    .style5
+    {
+        width: 233px;
+    }
+</style>
 <div id="body" class="clearfix">
 		<div class="wrapper">
 			<div class="col">
@@ -10,18 +32,36 @@
                     
                     <ul class="normal-form">
                         <li>
-                            <label>Mã Loại Vai Trò</label>
-                            <asp:TextBox runat="server" CssClass="field-input" ID="txtmaloaivaitro" ></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-                                ControlToValidate="txtmaloaivaitro" 
-                                ErrorMessage="Mời bạn nhập Mã Loại Vai Trò"></asp:RequiredFieldValidator>
+                            <table class="style1">
+                                <tr>
+                                    <td class="style3">
+                                        <label>
+                                        Mã Loại Vai Trò</label></td>
+                                    <td class="style4">
+                                        <asp:TextBox ID="txtmaloaivaitro" runat="server" CssClass="field-input" 
+                                            ReadOnly="True" Width="217px"></asp:TextBox>
+                                    </td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
+                            </table>
                         </li>
 	                    <li>
-		                    <label>Tên Vai Trò</label>
-		                    <asp:TextBox runat="server" CssClass="field-input" ID="txttenloaivaitro" ></asp:TextBox>
-	                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                                ControlToValidate="txttenloaivaitro" 
-                                ErrorMessage="Mời bạn nhập Tên Vai Trò"></asp:RequiredFieldValidator>
+		                    <table class="style1">
+                                <tr>
+                                    <td class="style2">
+                                        <label>
+                                        Tên Vai Trò</label></td>
+                                    <td class="style5">
+                                        <asp:TextBox ID="txttenloaivaitro" runat="server" CssClass="field-input" 
+                                            Width="218px"></asp:TextBox>
+                                    </td>
+                                    <td>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                                            ControlToValidate="txttenloaivaitro" ErrorMessage="Mời bạn nhập Tên Vai Trò"></asp:RequiredFieldValidator>
+                                    </td>
+                                </tr>
+                            </table>
 	                    </li>
 			         </ul>
 			         <asp:Literal runat="server" ID="lbThongBao" Visible="false"></asp:Literal>

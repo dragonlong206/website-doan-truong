@@ -14,7 +14,7 @@ namespace WebDoanHoi_layout.administration.templateLoad.NguoiDung
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Page.Title = "Danh Sách Bài Gửi";
+            Page.Title = "Danh Sách Sinh Viên - Cán Bộ";
 
             if (!IsPostBack)
             {
@@ -36,7 +36,7 @@ namespace WebDoanHoi_layout.administration.templateLoad.NguoiDung
         //Load
         public int LoadSinhVien()
         {
-            List<NGUOIDUNG> lt = new List<NGUOIDUNG>();
+            List<NGUOIDUNG_getallResult> lt = new List<NGUOIDUNG_getallResult>();
 
             BUSNguoiDung BUSNguoiDung = new BUSNguoiDung();
 

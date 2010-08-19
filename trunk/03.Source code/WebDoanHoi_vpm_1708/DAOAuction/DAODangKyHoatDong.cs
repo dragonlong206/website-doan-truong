@@ -212,5 +212,20 @@ namespace DAOAuction
             }
         }
         #endregion
+
+        #region nghia bổ sung
+        public int Xoa(int mahoatdong)
+        {
+            try
+            {
+                LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString);
+                return db.DANGKYHOATDONG_xoa(mahoatdong);
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
+        }
+        #endregion
     }
 }

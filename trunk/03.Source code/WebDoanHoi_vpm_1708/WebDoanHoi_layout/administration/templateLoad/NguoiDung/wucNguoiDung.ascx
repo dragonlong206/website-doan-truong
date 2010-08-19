@@ -18,15 +18,19 @@
         <Columns>
             <asp:BoundField HeaderText="STT" />
             <asp:BoundField DataField="manguoidung" HeaderText="Sinh Viên" Visible="false" />
-            <asp:HyperLinkField DataTextField="username" HeaderText="Password" NavigateUrl="~/Default.aspx"
-                DataNavigateUrlFields="username" DataNavigateUrlFormatString="~/administration/SinhVien.aspx?id={0}"
+            <asp:HyperLinkField DataTextField="username" HeaderText="Mã Số Sinh Viên" NavigateUrl="~/Default.aspx"
+                DataNavigateUrlFields="manguoidung" DataNavigateUrlFormatString="~/administration/NguoiDung.aspx?id={0}"
                 ItemStyle-Width="30%" SortExpression="username">
                 <ItemStyle Width="30%" />
             </asp:HyperLinkField>
             <asp:BoundField DataField="password" HeaderText="password" />
             <asp:BoundField DataField="hoten" HeaderText="Họ Tên" />
             <asp:BoundField DataField="email" HeaderText="Email" />
-            <asp:BoundField DataField="mavaitro" HeaderText="Vai Trò" />
+            <asp:HyperLinkField DataTextField="tenloaivaitro" HeaderText="Vai Trò" NavigateUrl="~/Default.aspx"
+                DataNavigateUrlFields="mavaitro" DataNavigateUrlFormatString="~/administration/LoaiVaiTro.aspx?id={0}"
+                ItemStyle-Width="30%" SortExpression="tenloaivaitro">
+                <ItemStyle Width="30%" />
+            </asp:HyperLinkField>
         </Columns>
     </asp:GridView>
     <div class="options">

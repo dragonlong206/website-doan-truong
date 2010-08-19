@@ -10,13 +10,14 @@
                     
                     <ul class="normal-form">
                         <li>
-                            <label>Mã Loại Hoạt Động</label>
-                            <asp:TextBox runat="server" CssClass="field-input" ID="txtmaloaihoatdong" 
-                                ReadOnly="True" ></asp:TextBox>
+                            <label>Mã Loại Hoạt Động&nbsp; </label>
+                            &nbsp;<asp:TextBox runat="server" CssClass="field-input" ID="txtmaloaihoatdong" 
+                                ReadOnly="True" Width="190px" ></asp:TextBox>
                         </li>
 	                    <li>
-		                    <label>Tên Loại Hoạt Động</label>
-		                    <asp:TextBox runat="server" CssClass="field-input" ID="txttenloaihoatdong" ></asp:TextBox>
+		                    <label>Tên Loại Hoạt Động </label>
+		                    &nbsp;<asp:TextBox runat="server" CssClass="field-input" 
+                                ID="txttenloaihoatdong" Width="190px" ></asp:TextBox>
 	                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                                 ControlToValidate="txttenloaihoatdong" 
                                 ErrorMessage="Mời bạn nhập Tên Loại Hoạt Động"></asp:RequiredFieldValidator>

@@ -13,7 +13,7 @@ namespace WebDoanHoi_layout.administration
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["ADMIN"] == null || ((NGUOIDUNG)Session["ADMIN"]).MaVaiTro != 3)
-                Response.Redirect("~/administration/index.aspx?id=1");
+                Response.Redirect("~/administration/index.aspx");
         }
     }
 }

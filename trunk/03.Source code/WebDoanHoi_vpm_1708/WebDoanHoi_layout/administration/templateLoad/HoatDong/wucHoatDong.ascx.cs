@@ -14,7 +14,7 @@ using BUSAuction;
 using DTOAuction;
 using System.Collections.Generic;
 using System.Web.UI.MobileControls;
-using System.Windows.Forms;
+
 
 namespace WebDoanHoi_layout.administration.templateLoad.HoatDong
 {
@@ -117,51 +117,6 @@ namespace WebDoanHoi_layout.administration.templateLoad.HoatDong
             this.GridViewHoatDong.PageSize = int.Parse(DropDownListPaging.SelectedValue);
             int SoDong = LoadHoatDong();
             FilterSTT(SoDong, GridViewHoatDong.PageIndex, int.Parse(DropDownListPaging.SelectedValue));
-        }
-
-        protected void GridViewHoatDong_RowCommand(object sender, GridViewCommandEventArgs e)
-        {
-            if (e.CommandName == "XoaHoatDong")
-            {
-                int index = Convert.ToInt32(e.CommandArgument);
-
-                BUSHoatDong busHoatDong = new BUSHoatDong();
-                List<HOATDONG> lt = busHoatDong.SelectHOATDONGsAll();
-
-                XoaHoatDong(lt[index].MaHoatDong);
-            }
-        }
-        protected void XoaHoatDong(int maHoatDong)
-        {
-            try
-            {
-                //xac nhan truoc khi xoa
-                DialogResult rs = MessageBox.Show("Bạn có chắc là muốn xoá Hoạt Động <" + maHoatDong + "> không?", "Warning!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (rs == DialogResult.Yes)
-                {
-                    //Goi ham xoa
-                    BUSHoatDong BUSHoatDong = new BUSHoatDong();
-                    if (BUSHoatDong.Xoa(maHoatDong) == 0)
-                    {
-                        //Thong bao
-                        DialogResult rs1 = MessageBox.Show("Xoá hoạt động thành công", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        Response.Redirect("HoatDong.aspx");
-                    }
-                    else
-                    {
-                        DialogResult rs1 = MessageBox.Show("Xoá hoạt động không thành công", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
-                }
-                else
-                {
-                    Response.Redirect("HoatDong.aspx");
-                }
-            }
-
-            catch (Exception ex)
-            {
-            }
-        
         }
     }
 }

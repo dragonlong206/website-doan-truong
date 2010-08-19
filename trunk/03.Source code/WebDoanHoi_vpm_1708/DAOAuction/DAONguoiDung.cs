@@ -12,21 +12,22 @@ namespace DAOAuction
     public class DAONguoiDung
     {
         #region Ham chung: Load Them Xoa Capnhat Timkiem 15/07/2010
-        public List<NGUOIDUNG> SelectNGUOIDUNGsAll()
+        public List<NGUOIDUNG_getallResult> SelectNGUOIDUNGsAll()
         {
-            List<NGUOIDUNG> list = new List<NGUOIDUNG>();
+            List<NGUOIDUNG_getallResult> list = new List<NGUOIDUNG_getallResult>();
             using (LinQDataContext db = new LinQDataContext(global::DAOAuction.Properties.Settings.Default.webdoantruongConnectionString))
             {
                 ISingleResult<NGUOIDUNG_getallResult> lp = db.NGUOIDUNG_getall();
                 foreach (NGUOIDUNG_getallResult NGUOIDUNG in lp)
                 {
-                    NGUOIDUNG var1 = new NGUOIDUNG();
+                    NGUOIDUNG_getallResult var1 = new NGUOIDUNG_getallResult();
                     var1.MaNguoiDung = NGUOIDUNG.MaNguoiDung;
                     var1.Username = NGUOIDUNG.Username;
                     var1.Password = NGUOIDUNG.Password;
                     var1.HoTen = NGUOIDUNG.HoTen;
                     var1.Email = NGUOIDUNG.Email;
                     var1.MaVaiTro = NGUOIDUNG.MaVaiTro;
+                    var1.TenLoaiVaiTro = NGUOIDUNG.TenLoaiVaiTro;
 
                     list.Add(var1);
                 }

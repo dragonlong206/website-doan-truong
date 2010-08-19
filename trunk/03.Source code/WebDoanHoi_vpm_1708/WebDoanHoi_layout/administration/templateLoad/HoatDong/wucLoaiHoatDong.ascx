@@ -13,8 +13,7 @@
     <asp:GridView ID="GridViewLoaiHoatDong" runat="server" 
                 AutoGenerateColumns="False" 
                 CssClass="tablestyle" DataKeyNames="maloaihoatdong" AllowPaging="True" 
-                onpageindexchanging="GridViewLoaiHoatDong_PageIndexChanging" 
-            onrowcommand="GridViewLoaiHoatDong_RowCommand">             
+                onpageindexchanging="GridViewLoaiHoatDong_PageIndexChanging">             
                 <Columns>
                     <asp:BoundField HeaderText="STT" />
                     <asp:BoundField DataField="maloaihoatdong" HeaderText="Loại Hoạt Động" Visible ="false" />
@@ -25,9 +24,6 @@
                         ItemStyle-Width="30%" SortExpression="maloaihoatdong" >
                         <ItemStyle Width="30%" />
                      </asp:HyperLinkField>
-                     
-                    <asp:ButtonField CommandName="XoaLoaiHoatDong" HeaderText="Xóa Loại Hoạt Động" 
-                        Text="Xóa" />
                      
                  </Columns>
     </asp:GridView>       

@@ -14,7 +14,7 @@ namespace WebDoanHoi_layout.administration.templateLoad.NguoiDung
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Page.Title = "Danh Sách Bài Gửi";
+            Page.Title = "Danh Sách Loại Vai Trò Người Dùng";
 
             if (!IsPostBack)
             {

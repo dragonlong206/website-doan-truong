@@ -22,8 +22,7 @@
     <asp:GridView ID="GridViewHoatDong" runat="server" 
                 AutoGenerateColumns="False" 
                 CssClass="tablestyle" DataKeyNames="mahoatdong" AllowPaging="True" 
-                onpageindexchanging="GridViewHoatDong_PageIndexChanging" 
-            onrowcommand="GridViewHoatDong_RowCommand">             
+                onpageindexchanging="GridViewHoatDong_PageIndexChanging">             
                 <Columns>
                     <asp:BoundField HeaderText="STT" />
                     <asp:HyperLinkField DataNavigateUrlFields="MaHoatDong" 
@@ -38,8 +37,6 @@
                         HeaderText="Thời gian bắt đầu đăng ký"/>
                     <asp:BoundField DataField="ThoiGianKetThucDangKy" 
                         HeaderText="Thời gian kết thúc đăng ký"/>
-                    <asp:ButtonField CommandName="XoaHoatDong" HeaderText="Xóa Hoạt Động" 
-                        Text="Xóa" />
                 </Columns>
     </asp:GridView>       
             
