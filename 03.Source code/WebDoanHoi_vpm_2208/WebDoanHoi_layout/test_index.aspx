@@ -7,7 +7,9 @@
     <link href="css/style-3-col.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
     <form id="form1" runat="server">
+    
     <div id="wrapper">
         <div id="header">
             <img src="images/top_banner.jpg" alt="banner" />

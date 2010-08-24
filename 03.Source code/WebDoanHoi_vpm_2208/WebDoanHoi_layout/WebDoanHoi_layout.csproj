@@ -676,6 +676,13 @@
     <Compile Include="TimKiem.aspx.designer.cs">
       <DependentUpon>TimKiem.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wuc\footer.ascx.cs">
       <DependentUpon>footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1069,6 +1076,7 @@
     <Content Include="CapNhatThongTinCaNhan.aspx" />
     <Content Include="ChiTietHoatDong.aspx" />
     <Content Include="classic-02.html" />
+    <Content Include="css\style.css" />
     <Content Include="DoiMatKhau.aspx" />
     <Content Include="fckeditor\editor\css\behaviors\disablehandles.htc" />
     <Content Include="fckeditor\editor\css\behaviors\showtableborders.htc" />
@@ -1556,6 +1564,8 @@
     <Content Include="images\ico\favicon_002.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="images\MenuItem.png" />
+    <Content Include="images\subitem-bg.png" />
     <Content Include="index.aspx" />
     <Content Include="LichLamViec.aspx" />
     <Content Include="LoaiBaiViet.aspx" />
@@ -1737,6 +1747,7 @@
     <Content Include="Scripts\shadowbox.js" />
     <Content Include="Scripts\util.js" />
     <Content Include="Scripts\yui-utilities.js" />
+    <Content Include="WebForm1.aspx" />
     <Content Include="wuc\search\wucBaiVietSearch.ascx" />
     <Content Include="wuc\search\wucHoatDongSearch.ascx" />
     <Content Include="wuc\search\wucSinhVienSearch.ascx" />
@@ -1790,6 +1801,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="css\images\" />
     <Folder Include="Download\" />
     <Folder Include="Uploads\ListBaiHat\" />
   </ItemGroup>

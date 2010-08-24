@@ -90,3 +90,29 @@ D:\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\Interop.VBIDE.dll
 D:\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.csproj.ResolveComReference.cache
 D:\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.dll
 D:\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.pdb
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\images\ico\favicon_002.ico
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\WebDoanHoi_layout.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\WebDoanHoi_layout.pdb
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\BUSAuction.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\DAOAuction.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\DTOAuction.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\FredCK.FCKeditorV2.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\Google.GData.AccessControl.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\Google.GData.Apps.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\Google.GData.Client.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\Google.GData.Extensions.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\Google.GData.GoogleBase.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\Google.GData.Photos.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\DAOAuction.pdb
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\DTOAuction.pdb
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\BUSAuction.pdb
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\Interop.Microsoft.Office.Core.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\Interop.Microsoft.Office.Interop.Excel.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\bin\Interop.VBIDE.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\ResolveAssemblyReference.cache
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\Interop.Microsoft.Office.Core.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\Interop.VBIDE.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.csproj.ResolveComReference.cache
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.dll
+G:\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.pdb
