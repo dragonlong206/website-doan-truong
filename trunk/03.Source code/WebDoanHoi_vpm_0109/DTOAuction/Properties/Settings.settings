@@ -1,0 +1,134 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DTOAuction.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="webdoantruongConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=MANTERO-81F34CE\SQLEXPRESS;Initial Catalog=webdoantruong;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=MANTERO-81F34CE\SQLEXPRESS;Initial Catalog=webdoantruong;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString2" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=E:\WebDoanHoi_layout\WebDoanHoi_layout\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=E:\WebDoanHoi_layout\WebDoanHoi_layout\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString3" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\WebDoanHoi_vpm_2907\WebDoanHoi_layout\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\WebDoanHoi_vpm_2907\WebDoanHoi_layout\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString4" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=e:\_Tong_hop_project\Web_Doan-Hoi_Project\WebDoanHoi_vpm_2907\WebDoanHoi_layout\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=e:\_Tong_hop_project\Web_Doan-Hoi_Project\WebDoanHoi_vpm_2907\WebDoanHoi_layout\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString5" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\Rap_HMinh\WebDoanHoi_vpm_3107\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\Rap_HMinh\WebDoanHoi_vpm_3107\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="D__MHX2010_RAP_HMINH_WEBDOANHOI_VPM_3107_WEBDOANHOI_LAYOUT_APP_DATA_WEBDOANTRUONG_MDFConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=NN;Initial Catalog=D:\MHX2010\RAP_HMINH\WEBDOANHOI_VPM_3107\WEBDOANHOI_LAYOUT\APP_DATA\WEBDOANTRUONG.MDF;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=NN;Initial Catalog=D:\MHX2010\RAP_HMINH\WEBDOANHOI_VPM_3107\WEBDOANHOI_LAYOUT\APP_DATA\WEBDOANTRUONG.MDF;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString6" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_3107\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_3107\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString7" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_0408\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\Rap_HMinh_2\Rap_HMinh\WebDoanHoi_vpm_0408\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString8" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\WebDoanTruong_0408\Rap_HMinh\WebDoanHoi_vpm_0408\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\WebDoanTruong_0408\Rap_HMinh\WebDoanHoi_vpm_0408\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString9" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\WebDoanTruong_0508\Rap_HMinh\WebDoanHoi_vpm_0408\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\WebDoanTruong_0508\Rap_HMinh\WebDoanHoi_vpm_0408\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString10" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\WebDoanHoi_vpm_0508\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\WebDoanHoi_vpm_0508\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString11" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\WebDoanHoi_vpm_1208\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=D:\MHX2010\WebDoanHoi_vpm_1208\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString12" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename="D:\EBOOK\Projects Trung Nghia\Web\New folder\WebDoanHoi_layout\App_Data\webdoantruong.mdf";Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename="D:\EBOOK\Projects Trung Nghia\Web\New folder\WebDoanHoi_layout\App_Data\webdoantruong.mdf";Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString13" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=D:\WebDoanHoi_vpm_1708\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=D:\WebDoanHoi_vpm_1708\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+    <Setting Name="webdoantruongConnectionString14" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.\SQLEXPRESS;AttachDbFilename=D:\WebDoanHoi_vpm_2208\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;AttachDbFilename=D:\WebDoanHoi_vpm_2208\WebDoanHoi_layout\App_Data\webdoantruong.mdf;Integrated Security=True;User Instance=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
