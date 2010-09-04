@@ -2,22 +2,17 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphPost" runat="server">
     <div class="post-content">
-        <table cellpadding="10px">
-            <tr>
-                <td style="width: 30%" align="center" valign="middle">
-                    <asp:Label ID="lblHinhAnh" runat="server" Text="Label" Width="100%"></asp:Label>
-                </td>
-                <td style="vertical-align:top">
-                    <asp:Label ID="lblTieuDe" runat="server" Text="Label" Font-Size="X-Large" ForeColor="Red"></asp:Label>
-                    <p>
-                        <asp:Label ID="lblTomTat" runat="server" Text="Label"></asp:Label></p>
-                </td>
-            </tr>
-        </table>
-        <center>
-            <hr style="margin: 5px 0px 5px 0px;" width="95%" />
-        </center>
+            <asp:Label ID="Label1" runat="server" Text="txtTinNoiBat"></asp:Label>
+            <br />
+            
         <table style="text-align: center">
+        <tr>
+            <td colspan="3">
+                <center>
+                    <hr style="margin: 5px 0px 5px 0px;" width="95%" />
+                </center>
+            </td>
+        </tr>
             <tr>
                 <td style="width: 30%">
                     <asp:Label ID="lblHinh1" runat="server" Text="Hinh1"></asp:Label>

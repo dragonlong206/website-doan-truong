@@ -14,31 +14,13 @@ namespace WebDoanHoi_layout {
     public partial class index1 {
         
         /// <summary>
-        /// lblHinhAnh control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHinhAnh;
-        
-        /// <summary>
-        /// lblTieuDe control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTieuDe;
-        
-        /// <summary>
-        /// lblTomTat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTomTat;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// lblHinh1 control.
