@@ -90,3 +90,29 @@ D:\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\Interop.VBIDE.dll
 D:\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.csproj.ResolveComReference.cache
 D:\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.dll
 D:\WebDoanHoi_vpm_2208\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.pdb
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\images\ico\favicon_002.ico
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\WebDoanHoi_layout.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\WebDoanHoi_layout.pdb
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\BUSAuction.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\DAOAuction.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\DTOAuction.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\FredCK.FCKeditorV2.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\Google.GData.AccessControl.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\Google.GData.Apps.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\Google.GData.Client.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\Google.GData.Extensions.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\Google.GData.GoogleBase.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\Google.GData.Photos.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\DAOAuction.pdb
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\DTOAuction.pdb
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\BUSAuction.pdb
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\Interop.Microsoft.Office.Core.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\Interop.Microsoft.Office.Interop.Excel.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\bin\Interop.VBIDE.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\obj\Debug\ResolveAssemblyReference.cache
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\obj\Debug\Interop.VBIDE.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.csproj.ResolveComReference.cache
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.dll
+D:\HOC TAP\MHX2010\New Folder\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout\obj\Debug\WebDoanHoi_layout.pdb
