@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using BUSAuction;
 using DTOAuction;
+using System.Globalization;
 
 namespace WebDoanHoi_layout.wuc
 {
@@ -23,7 +24,8 @@ namespace WebDoanHoi_layout.wuc
                 str += DSBaiVietMoiNhat[i].TieuDe;
                 str += "</a></li>";
                 str += "</ul>";*/
-                str += "<a style='font-size:medium' href ='" + "BaiViet.aspx?id=" + DSBaiVietMoiNhat[i].MaBaiViet + "'>" + DSBaiVietMoiNhat[i].TieuDe + "</a><br/>";
+                str += "  <img src = 'images/bullet.GIF' height='6px' width='6px'/>";
+                str += "<a style='font-size:14px' href ='" + "BaiViet.aspx?id=" + DSBaiVietMoiNhat[i].MaBaiViet + "'>  " +CultureInfo.CurrentUICulture.TextInfo.ToTitleCase/*.CurrentCulture..TextInfo.ToTitleCase*/(DSBaiVietMoiNhat[i].TieuDe.ToLower()) + "</a><br/><br/>";
             }
             lblBaiVietMoiNhat.Text = str;
         }
