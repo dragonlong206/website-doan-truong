@@ -126,6 +126,12 @@ a:hover
 	background-color: White;
 	
 }
+#content .post-content1
+{
+	color: Black;
+	background-color: White;
+	
+}
 /*------------ loai bai viet .aspx ------------------*/
 .dsbaiviet
 {
@@ -171,6 +177,12 @@ a:hover
 	display: block;
 	color: Black;
 	padding: 5px 2px 5px 2px;
+	
+}
+.sidebar .post-content1 ul li
+{
+	display: block;
+	color: Black;
 	
 }
 

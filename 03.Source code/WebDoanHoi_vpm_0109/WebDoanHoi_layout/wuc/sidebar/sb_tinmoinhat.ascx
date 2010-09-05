@@ -4,9 +4,7 @@
     <div class="post-title">
         Tin mới nhất
     </div>
-    <div class="post-content">
-        <ul>
-            <asp:Label ID="lblBaiVietMoiNhat" runat="server" Text="abc"></asp:Label>
-        </ul>
+    <div class="post-content1" style="margin-top:6px">
+        <asp:Label ID="lblBaiVietMoiNhat" runat="server" Text="abc"></asp:Label>
     </div>
 </div>
