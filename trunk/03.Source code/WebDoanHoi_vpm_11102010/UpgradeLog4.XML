@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WebDoanHoi_layout">
+</Property><Property Name="Solution File" Value="E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\WebDoanHoi_layout.sln">
+</Property><Property Name="Date" Value="Sunday, September 05, 2010">
+</Property><Property Name="Time" Value="10:26:42 AM">
+</Property><Property Name="Log Number" Value="4">
+</Property></Properties><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOAuction.csproj" Description="Project file successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOAuction.csproj">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOAlbum.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOAlbum.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOBaiHat.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOBaiHat.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOBaiViet.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOBaiViet.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOCauHoiKhaoSat.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOCauHoiKhaoSat.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOChuyenMuc.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOChuyenMuc.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAODangKyHoatDong.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAODangKyHoatDong.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAODangKyMuonPhong.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAODangKyMuonPhong.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAODapAnKhaoSat.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAODapAnKhaoSat.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOGioiThieu.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOGioiThieu.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOHeThongToChuc.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOHeThongToChuc.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOHinhAnh.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOHinhAnh.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOHoatDong.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOHoatDong.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOKhaoSat.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOKhaoSat.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOLoaiBaiViet.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOLoaiBaiViet.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOLoaiHoatDong.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOLoaiHoatDong.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOLoaiVaiTro.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOLoaiVaiTro.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAONguoiDung.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAONguoiDung.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOTapTinBaiViet.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOTapTinBaiViet.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOTapTinThongBao.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOTapTinThongBao.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOThongBao.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\DAOThongBao.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\Properties\Settings.Designer.cs" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\app.config" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\app.config">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\Properties\Settings.settings" Description="File successfully backed up as E:\DOAN - HOI\2008-2009\MHX\project\03.Source code\WebDoanHoi_vpm_0109\Backup3\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOAuction.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DAOAuction" Source="DAOAuction\DAOAuction.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DAOAuction" Source="DAOAuction\DAOAuction.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
